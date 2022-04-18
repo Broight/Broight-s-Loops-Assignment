@@ -28,16 +28,20 @@ const scores = [
 
 var x = 0
 var evenNum = [0];
+var evenSum = 0;
 
 while (x < scores.length) {
 	x = x + 1;
 	if (scores[x] % 2 === 0) {
 		evenNum.push(scores[x]);
+		var vv = scores[x];
+		evenSum = evenSum + vv;
 	}
 	//console.log("ran " + x + " time(s)");
 	//console.log("there are " + evenNum.length + " even numbers");
 }
-console.log(evenNum);
+//console.log(evenNum);
+console.log(evenSum);
 
 //? Append bug.jpg img to all item elements using a do-while loop
 // 7. Select all the div elements that contain the class "item"
